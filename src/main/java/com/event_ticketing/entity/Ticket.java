@@ -1,6 +1,6 @@
-package com.event_ticketing.event_ticketing.entity;
+package com.event_ticketing.entity;
 
-import com.event_ticketing.event_ticketing.enums.TicketStatus;
+import com.event_ticketing.domain.TicketStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

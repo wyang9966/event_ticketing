@@ -1,4 +1,4 @@
-package com.event_ticketing.event_ticketing.enums;
+package com.event_ticketing.domain;
 
 public enum TicketStatus {
     PURCHASED,

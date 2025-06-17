@@ -1,4 +1,4 @@
-package com.event_ticketing.event_ticketing.entity;
+package com.event_ticketing.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -10,7 +10,10 @@ import lombok.Setter;
 @Setter
 public class EventInventory {
     @Id
-    @Column(name = "event_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "event_id", nullable = false, unique = true)
     private Long eventId;
 
     @Column(name = "available_tickets", nullable = false)

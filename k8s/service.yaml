@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: event-ticketing-service
+  namespace: event-ticketing
+  labels:
+    app: event-ticketing-app
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+  selector:
+    app: event-ticketing-app 

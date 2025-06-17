@@ -1,4 +1,4 @@
-package com.event_ticketing.event_ticketing.entity;
+package com.event_ticketing.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -14,5 +14,8 @@ public class User {
     private Long id;
 
     @Column(nullable = false)
+    private String name;
+
+    @Column(nullable = false, unique = true)
     private String email;
 }
