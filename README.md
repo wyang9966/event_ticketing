@@ -302,7 +302,3 @@ docker compose -f docker-compose-full.yml up -d
 3. Make your changes
 4. Add tests
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
